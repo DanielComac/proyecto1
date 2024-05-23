@@ -1,0 +1,15 @@
+<div>
+    <form [formGroup]="formGroup">
+        <mat-form-field>
+            <input formControlName="name" matInput> 
+        </mat-form-field><br>
+        <mat-form-field>
+        <input formControlName="email" matInput> 
+        </mat-form-field><br>
+        <mat-form-field>
+        <input formControlName="password" matInput>
+        </mat-form-field>
+        <input formControlName="phone" maxlength="10" type="tel"> 
+        <button (click)="submit()" [disabled]="formGroup.invalid">enviar</button>
+    </form>
+</div>
