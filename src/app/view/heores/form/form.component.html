@@ -1,15 +1,17 @@
 <div>
     <form [formGroup]="formGroup">
         <mat-form-field>
-            <input formControlName="name" matInput> 
+            <input formControlName="name" placeholder="Nombre" matInput> 
         </mat-form-field><br>
         <mat-form-field>
-        <input formControlName="email" matInput> 
+        <input formControlName="email" placeholder="Correo electrónico"type="mail" matInput> 
         </mat-form-field><br>
         <mat-form-field>
-        <input formControlName="password" matInput>
-        </mat-form-field>
-        <input formControlName="phone" maxlength="10" type="tel"> 
-        <button (click)="submit()" [disabled]="formGroup.invalid">enviar</button>
+        <input formControlName="password" placeholder="Contraseña" matInput>
+        </mat-form-field><br>
+        <mat-form-field>
+        <input formControlName="phone" maxlength="10" placeholder="Teléfono" type="tel" matInput>
+        </mat-form-field>  <br>
+        <button mat-flat-button color="primary" (click)="submit()" [disabled]="formGroup.invalid">enviar</button>
     </form>
 </div>

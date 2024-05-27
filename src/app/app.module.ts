@@ -6,14 +6,21 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './view/heores/form/form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatInputModule } from "@angular/material/input"
-import { MatButtonModule } from "@angular/material/button"
-import { MatFormFieldModule } from "@angular/material/form-field"
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { TableComponent } from './table/table.component';
+import { MatTable, MatTableModule } from '@angular/material/table';
+import { MatTableDataSource } from '@angular/material/table';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent
+    FormComponent,
+    DashboardComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
@@ -21,9 +28,11 @@ import { MatFormFieldModule } from "@angular/material/form-field"
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatInputModule, 
+    MatInputModule,
     MatButtonModule,
     MatFormFieldModule,
+    MatTableModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

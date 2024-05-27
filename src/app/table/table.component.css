@@ -1,0 +1,49 @@
+.table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.table th,
+.table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.table-container {
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+li {
+    display: inline;
+    margin-right: 20px; 
+  }
+
+p {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 17%;
+}
+
+.tabla-title {
+  margin-left: 5%;
+}
+
+.tabla-title {
+  margin-top: 10%;
+}
