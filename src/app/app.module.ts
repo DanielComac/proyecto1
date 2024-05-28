@@ -10,10 +10,9 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { TableComponent } from './table/table.component';
-import { MatTable, MatTableModule } from '@angular/material/table';
-import { MatTableDataSource } from '@angular/material/table';
-
 
 @NgModule({
   declarations: [
@@ -32,7 +31,7 @@ import { MatTableDataSource } from '@angular/material/table';
     MatButtonModule,
     MatFormFieldModule,
     MatTableModule,
-
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
